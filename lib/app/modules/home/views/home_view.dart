@@ -27,7 +27,7 @@ class HomeView extends GetView<HomeController> {
           FloatingActionButton(
             onPressed: () {
               // You can update the message to write here if needed
-              controller.messageToWrite.value = '{"id": "1", "nik": "124756", "nfc": "3123432"}';
+              controller.messageToWrite.value = '{"nik": "2"}';
             },
             child: Icon(Icons.edit),
           ),

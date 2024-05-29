@@ -79,7 +79,7 @@ class HomeController extends GetxController {
 
       // Tulis data ke blok pada kartu MIFARE Classic
       await mifareClassic.writeBlock(
-        blockIndex: 4,
+        blockIndex: 6,
         data: dataToWrite,
       );
 
@@ -132,7 +132,7 @@ class HomeController extends GetxController {
     );
 
     // Read the data from the block
-    Uint8List data = await mifareClassic.readBlock(blockIndex: 4);
+    Uint8List data = await mifareClassic.readBlock(blockIndex: 5);
     print(data);
     // Convert the data back to String
     String message = String.fromCharCodes(data);
